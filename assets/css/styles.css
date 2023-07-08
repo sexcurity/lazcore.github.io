@@ -6,6 +6,44 @@
 body{
     font-family: 'Poppins', sans-serif !important;
 }
+
+.what-we-do-active {
+    background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%)
+}
+
+.what-we-do-text-gradient {
+    background: linear-gradient(139.37deg,
+            #1d76bb -8.64%,
+            #282560 107.27%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.what-we-do-active-notch {
+    background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%);
+    width: 5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-we-do-active .what-we-do-active-notch {
+    background: white !important;
+    width: 5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #loader {
     position: fixed;
     width: 100%;
@@ -162,7 +200,7 @@ body{
     top: 10%;
 }
 #service-content {
-    /* top:25vh; */
+    top:8rem;
     /* left:15vh; */
 }
 
@@ -226,7 +264,7 @@ body{
 }
 @media (min-width:768px)   { 
     #service-content {
-        top:25vh;
+        top:6rem;
         left:0;
     }
 
@@ -253,7 +291,7 @@ body{
         right: 8%;
     }
     #service-content {
-        top:25vh;
+        top:6rem;
         left:0;
     }
 }
