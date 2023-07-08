@@ -1,0 +1,259 @@
+:root   {
+    /* --color-base: # */
+    /* --fullGrid: 1 / 1 / -1 / -1; */
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #fff url('../img/preloader.gif') no-repeat center center;
+}
+#header-whoweare .img-header{
+    height: 85% !important;
+}
+
+#our-mission{
+    /* height: 252px; */
+    top:22%;
+    position: relative;
+}
+
+
+.h-125{
+    height: 125% !important;
+}
+.h-65 {
+    height: 65% !important;
+}
+.border-footer{
+    width: 100%;
+    height: 2.5px;
+    border-radius: 50px;
+    background: #2D1D61;
+    position: relative;
+    top: -2.4rem;
+}
+#contact {
+    position: relative;
+    top: -95px;
+    z-index: 999;
+}
+#socmed-management .frame-card {
+    height: 552px;
+    padding: 0px 88px 0px 91px;
+}
+#socmed-management h1 {
+    color: #2D1D61;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 40px !important;
+    text-transform: capitalize;
+}
+#socmed-management span p{
+    color: #363049;
+    font-size: 18px;
+    font-family: Poppins;
+    line-height: 150.7%;
+    letter-spacing: 0.1px;
+    padding-bottom: 40px !important;
+}
+#our-mission h1 {
+    color: #2D1D61;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 40px !important;
+    text-transform: capitalize;
+}
+
+.header-hero{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    top: -6%;
+    background-color:black;
+
+}
+.header-hero video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100vh;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity:0.3;
+}
+
+.footer-hero{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    top: -6%;
+    background-color:black;
+
+}
+.footer-hero video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100vh;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity:0.3;
+}
+#hero {
+    background: url("../images/bg-landing.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin-top: -91px;
+    padding-top: 31px;
+    z-index: 999;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#hero .img-wa {
+    width:12%;
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+}
+
+#hero p {
+    font-size: 80px;
+}
+
+.header-background {
+    /* background-image: url('../img/bannerr.png'); */
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    height: 1080px;
+}
+#header-whoweare h1{
+    color: #2D1D61;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 40px !important;
+    text-transform: capitalize;
+}
+#service {
+    position: relative;
+    /* height: 90vh; */
+    top: 10%;
+}
+#service-content {
+    /* top:25vh; */
+    /* left:15vh; */
+}
+
+#header-whoweare .img-header{
+    height: 85%;
+    margin-left: 10%;
+}
+#header-whoweare .img-mobile{
+    /* height: 85%; */
+    display: none;
+}
+
+.bottom-part {
+    width: 100%;
+    background: url("../img/wave.png")  center no-repeat;
+    background-size: cover;
+}
+
+#our-vision {
+    background-image: url('../img/aksen_our_works.png');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    height: 940px;
+}
+
+#footer form label {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+
+}
+
+#footer form .form-control {
+    background: transparent !important;
+    border:0px solid;
+    border-radius: 0px;
+    border-bottom: 2px solid white !important;
+}
+
+#footer .btn-submit {
+    width: 265px;
+    color:white;
+    border-radius: 68px;
+    background: linear-gradient(90deg, #2DBEAB 0%, #1BB5F7 100%);
+}
+
+
+@media (min-width: 992px) {
+    #hero .img-wa {
+        width:22%;
+        position: absolute;
+        bottom: 8%;
+        right: 8%;
+    }
+}
+@media (min-width:768px)   { 
+    #service-content {
+        top:25vh;
+        left:0;
+    }
+
+    #hero .img-wa {
+        width:25%;
+        position: absolute;
+        bottom: 8%;
+        right: 8%;
+    }
+}
+
+@media (min-width:481px)   {  
+    .border-footer{
+        display: none;
+    }
+    #header-whoweare .img-header {
+        display: none;
+    }
+    
+    #hero .img-wa {
+        width:25%;
+        position: absolute;
+        bottom: 8%;
+        right: 8%;
+    }
+    #service-content {
+        top:25vh;
+        left:0;
+    }
+}
