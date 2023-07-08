@@ -12,6 +12,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
   </head>
   <body class="header-background">
     <div id="loader"></div>
@@ -344,6 +350,49 @@
         </div>
       </div>
     </div>
+
+    <div id="clients" class="my-5 py-5">
+      <div class="container">
+        <p class="what-we-do-text-gradient text-center">OUR PRODUCTS</p>
+        <h3
+          class="font-weight-bolder text-center w-50 mx-auto"
+          style="color: #2d1d61"
+        >
+          We have ben working with some Fortune 500 clients
+        </h3>
+        <section class="splide my-5 my-5" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide p-3">
+                <div class="mx-auto shadow p-3" style="width: 170px; border-radius: 1rem;">
+                  <img src="./assets/img/logo-mps-7-300x90.png" alt="" class="w-100" style="height: 47px; object-fit: contain;"/>
+                </div>
+              </li>
+              <li class="splide__slide p-3">
+                <div class="mx-auto shadow p-3" style="width: 170px; border-radius: 1rem;">
+                  <img src="./assets/img/logo-mps-7-300x90.png" alt="" class="w-100" style="height: 47px; object-fit: contain;"/>
+                </div>
+              </li>
+              <li class="splide__slide p-3">
+                <div class="mx-auto shadow p-3" style="width: 170px; border-radius: 1rem;">
+                  <img src="./assets/img/logo-mps-7-300x90.png" alt="" class="w-100" style="height: 47px; object-fit: contain;"/>
+                </div>
+              </li>
+              <li class="splide__slide p-3">
+                <div class="mx-auto shadow p-3" style="width: 170px; border-radius: 1rem;">
+                  <img src="./assets/img/logo-mps-7-300x90.png" alt="" class="w-100" style="height: 47px; object-fit: contain;"/>
+                </div>
+              </li>
+              <li class="splide__slide p-3">
+                <div class="mx-auto shadow p-3" style="width: 170px; border-radius: 1rem;">
+                  <img src="./assets/img/logo-mps-7-300x90.png" alt="" class="w-100" style="height: 47px; object-fit: contain;"/>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- /.jumbotron -->
     <div id="footer">
       <div class="footer-hero h-100">
@@ -436,7 +485,17 @@
   ></script>
   <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script>
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 3,
+      perMove: 1,
+      arrows: false,
+      pagination: false,
+      focus: 'center',
+      autoWidth: true
+    }).mount();
     var loader;
 
     function loadNow(opacity) {

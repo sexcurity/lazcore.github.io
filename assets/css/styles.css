@@ -261,6 +261,18 @@ body{
     height: 60rem;
 }
 
+li.splide__slide {
+    transition: all ease-in-out .3s;
+}
+
+li.splide__slide.p-3.is-active.is-visible {
+    transform: translateY(-1.5rem);
+}
+
+li.splide__slide.splide__slide--clone.p-3.is-active.is-visible {
+    transform: translateY(0rem);
+}
+
 @media (min-width:992px) {
     #service {
         height: 65% !important;
