@@ -46,7 +46,7 @@ body{
 }
 #socmed-management .frame-card {
     height: 552px;
-    padding: 0px 88px 0px 91px;
+    padding: 0px 0px 0px 30px;
 }
 #socmed-management h1 {
     color: #2D1D61;
@@ -138,7 +138,7 @@ body{
 }
 
 .header-background {
-    /* background-image: url('../img/bannerr.png'); */
+    background-image: url('../img/bannerr.png');
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -177,7 +177,8 @@ body{
 
 .bottom-part {
     width: 100%;
-    background: url("../img/wave.png")  center no-repeat;
+    height: auto;
+    background: url("../img/rectangle-center.png") no-repeat center center;
     background-size: cover;
 }
 
