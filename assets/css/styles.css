@@ -6,6 +6,44 @@
 body{
     font-family: 'Poppins', sans-serif !important;
 }
+
+.what-we-do-active {
+    background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%)
+}
+
+.what-we-do-text-gradient {
+    background: linear-gradient(139.37deg,
+            #1d76bb -8.64%,
+            #282560 107.27%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.what-we-do-active-notch {
+    background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%);
+    width: 5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-we-do-active .what-we-do-active-notch {
+    background: white !important;
+    width: 5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #loader {
     position: fixed;
     width: 100%;
@@ -117,7 +155,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    margin-top: -91px;
+    /* margin-top: -91px; */
     padding-top: 31px;
     z-index: 999;
 }
@@ -158,11 +196,11 @@ body{
 }
 #service {
     position: relative;
-    /* height: 90vh; */
+    height: 100%;
     top: 10%;
 }
 #service-content {
-    /* top:25vh; */
+    top:8rem;
     /* left:15vh; */
 }
 
@@ -216,8 +254,39 @@ body{
     background: linear-gradient(90deg, #2DBEAB 0%, #1BB5F7 100%);
 }
 
+#our-works {
+    background: url(../img/aksen_our_works.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    height: 60rem;
+}
 
-@media (min-width: 992px) {
+li.splide__slide {
+    transition: all ease-in-out .3s;
+}
+
+li.splide__slide.p-3.is-active.is-visible {
+    transform: translateY(-1.5rem);
+}
+
+li.splide__slide.splide__slide--clone.p-3.is-active.is-visible {
+    transform: translateY(0rem);
+}
+
+@media (min-width:992px) {
+    #service {
+        height: 65% !important;
+    }
+
+    #our-works {
+        background: url(../img/aksen_our_works.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 45rem;
+    }
+
     #hero .img-wa {
         width:22%;
         position: absolute;
@@ -226,8 +295,12 @@ body{
     }
 }
 @media (min-width:768px)   { 
+    #service {
+        height: 90%;
+    }
+    
     #service-content {
-        top:25vh;
+        top:6rem;
         left:0;
     }
 
@@ -248,13 +321,13 @@ body{
     }
     
     #hero .img-wa {
-        width:25%;
+        width:15%;
         position: absolute;
         bottom: 8%;
         right: 8%;
     }
     #service-content {
-        top:25vh;
+        top:6rem;
         left:0;
     }
 }
