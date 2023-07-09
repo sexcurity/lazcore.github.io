@@ -284,6 +284,12 @@ body{
     height: 60rem;
 }
 
+#phone-x1 {
+    height: 15rem;
+    object-fit: contain;
+    margin-bottom: -2rem;
+}
+
 footer #wave {
     top: -5.2rem;
     z-index: 9;
@@ -311,6 +317,10 @@ footer #wave {
 
     footer #wave {
         top: -13rem !important;
+    }
+
+    #phone-x1 {
+        height: 40rem;
     }
 }
 @media (min-width:768px)   { 
