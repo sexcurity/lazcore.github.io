@@ -1,253 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lazcore Inovasi Digital</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-</head>
-<body class="header-background"> 
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="header-background">
     <!-- <div id="loader">
     </div> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-       <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/ic_logo_head.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link text-white" href="#">Features</a>
-                <a class="nav-link text-white" href="#">Pricing</a>
-                <a class="nav-link text-white" href="#">Disabled</a>
-            </div>
-            </div>
-       </div>
-      </nav>
-      <div class="h-75" id="header-whoweare">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12">
-                <div id="header-whoweare">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <h1 class="text-white">Who We Are</h1>
-                                <p class="text-white">
-                                    L.I.D is young initiative command, which includes professionals of his activity. Each member of the commands, is not just an employee, they are something more valuable to us.
-                                </p>
-                                <br>
-                                <p class="text-white">
-                                    Penetrating into a fairly large and modern activity, the company Raven provides each time clearer and perfected solutions for the task.
-                                </p>
-                                <br>
-                                <p class="text-white">
-                                    Every employee of our company has a great experience in working with customers and solving tasks, while keeping unlimited energy and initiative.
-                                </p>
-                                <br>
-                                <p class="text-white">
-                                    Every client, who had come to us, did not left without a well-provided service.
-                                </p>
-                                <br>
-                                <p class="text-white">
-                                    Let us work together - you will not regret!
-                                </p>
-                            <p></p>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <img class="img-fluid img-header" src="assets/img/header-whoweare.png" alt="">
-                        </div>
-                    </div>
+    <div id="bg-nav" class="nav-colored"></div>
+    <nav
+      class="bg-transparent container navbar navbar-dark navbar-expand-md pt-md-4 fixed-top"
+      id="navbar"
+      style="z-index: 9999"
+    >
+      <a class="navbar-brand d-block d-md-none" href="#">
+        <img
+          src="assets/img/ic_logo_head.png"
+          alt="logo"
+          style="width: 10rem"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        onclick="document.getElementById('navbarNavAltMarkup').classList.toggle('collapse')"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse justify-content-between navbar-collapse p-3 mt-2 mt-md-0"
+        id="navbarNavAltMarkup"
+      >
+        <a class="d-md-block d-none navbar-brand" href="#">
+          <img src="assets/img/ic_logo_head.png" alt="logo" />
+        </a>
+        <div class="navbar-nav" style="column-gap: 3rem">
+          <a class="nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link" href="#works">Works</a>
+          <a class="nav-link" href="#introduction">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="h-75 pt-5" id="header-whoweare">
+      <div class="container h-100 mt-5 mt-lg-5 mt-md-0">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <div id="header-whoweare">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="text-white">Who We Are</h1>
+                  <p class="text-white">
+                    L.I.D is young initiative command, which includes
+                    professionals of his activity. Each member of the commands,
+                    is not just an employee, they are something more valuable to
+                    us.
+                  </p>
+                  <br />
+                  <p class="text-white">
+                    Penetrating into a fairly large and modern activity, the
+                    company Raven provides each time clearer and perfected
+                    solutions for the task.
+                  </p>
+                  <br />
+                  <p class="text-white">
+                    Every employee of our company has a great experience in
+                    working with customers and solving tasks, while keeping
+                    unlimited energy and initiative.
+                  </p>
+                  <br />
+                  <p class="text-white">
+                    Every client, who had come to us, did not left without a
+                    well-provided service.
+                  </p>
+                  <br />
+                  <p class="text-white">
+                    Let us work together - you will not regret!
+                  </p>
+                  <p></p>
                 </div>
+                <div class="col-12 col-lg-6">
+                  <img
+                    class="img-fluid img-header"
+                    src="assets/img/header-whoweare.png"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <!-- end -->          
         </div>
-        
+        <!-- end -->
       </div>
-        <div class="container h-50">
-                <!-- our mission -->
-                <div id="our-mission" class="">
-                        <div class="row ">
-                            <div class="col-lg-6 col-12">
-                                <img class="img-fluid w-100" src="assets/img/cardchart.png" alt="">
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <h1 class="">Our Mission</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                </div>
-                <!-- end our mission  -->
+    </div>
+    <div class="container h-50">
+      <!-- our mission -->
+      <div id="our-mission" class="">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <img
+              class="img-fluid w-100"
+              src="assets/img/cardchart.png"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 col-12">
+            <h1 class="">Our Mission</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
-        <div id="our-vision">
-            <div class="container h-50">
-                <!-- our mission -->
-                <div id="our-mission" class="h-100 pt-5">
-                        <h1 class="text-center">Our Vision</h1>
-                        <div class="row pt-5">
-                            <div class="col-lg-3 col-12">
-                                <div class="card">
-                                <div class="card-body">
-                                    This is some text within a card body.
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-12">
-                                <div class="card">
-                                <div class="card-body">
-                                    This is some text within a card body.
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-12">
-                                <div class="card">
-                                <div class="card-body">
-                                    This is some text within a card body.
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-12">
-                                <div class="card">
-                                <div class="card-body">
-                                    This is some text within a card body.
-                                </div>
-                                </div>
-                            </div>
-                        </div>
+      </div>
+      <!-- end our mission  -->
+    </div>
+    <div id="our-vision" class="mt-5 pt-5">
+      <div class="container h-50 mt-md-5 pt-md-5">
+        <!-- our mission -->
+        <div id="our-mission" class="h-100 pt-5">
+          <h1 class="text-center">Our Vision</h1>
+          <div class="row pt-5">
+            <div class="col-lg-3 col-12">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
                 </div>
-                <!-- end our mission  -->
-            </div>  
-        </div>  
-        <div id="collaborate">
-            <div class="container">
-                <div id="back-video">
-
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
                 </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end our mission  -->
+      </div>
+    </div>
+    <div id="footer">
+      <div class="footer-hero h-100 py-5">
+        <video
+          src="http://www.georgewpark.com/video/blurred-street.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div
+          class="align-items-center d-flex justify-content-center position-relative"
+          id="hero"
+        >
+          <div class="container">
+            <div id="collaborate">
+              <div class="container">
+                <div id="back-video"></div>
+                <h1 class="text-white">Lets Collaborate</h1>
+                <span class="text-white"
+                  >Ready to Explore Your Digital Ecosystem Potential? Connect
+                  with Us Today.</span
+                >
                 <form>
-                    <div class="form-row">
-                      <div class="form-group col-lg-6 col-12">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control form-control-lg" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-lg-6 col-12">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control form-control-lg" id="inputPassword4">
-                      </div>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6 col-12">
+                      <label for="inputEmail4">Email</label>
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="inputEmail4"
+                      />
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-lg-6 col-12">
-                          <label for="inputEmail4">Email</label>
-                          <input type="email" class="form-control form-control-lg" id="inputEmail4">
-                        </div>
-                        <div class="form-group col-lg-6 col-12">
-                          <label for="inputPassword4">Password</label>
-                          <input type="password" class="form-control form-control-lg" id="inputPassword4">
-                        </div>
-                        <div class="form-group col-lg-12 col-12">
-                            <label for="inputPassword4">Password</label>
-                            <input type="password" class="form-control form-control-lg" id="inputPassword4">
-                          </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                  </form>
+                    <div class="form-group col-lg-6 col-12">
+                      <label for="inputPassword4">Password</label>
+                      <input
+                        type="password"
+                        class="form-control form-control-lg"
+                        id="inputPassword4"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-lg-6 col-12">
+                      <label for="inputEmail4">Email</label>
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="inputEmail4"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 col-12">
+                      <label for="inputPassword4">Password</label>
+                      <input
+                        type="password"
+                        class="form-control form-control-lg"
+                        id="inputPassword4"
+                      />
+                    </div>
+                    <div class="form-group col-lg-12 col-12">
+                      <label for="inputPassword4">Password</label>
+                      <input
+                        type="password"
+                        class="form-control form-control-lg"
+                        id="inputPassword4"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-submit mt-5">
+                    Sign in
+                  </button>
+                </form>
+              </div>
             </div>
-        </div>    
+          </div>
+          <br />
+          <!-- <img src="assets/img/artwork_bisdev.png" alt=""> -->
+        </div>
+      </div>
+    </div>
 
-        <!-- footer -->
-        <footer id="contact" class=" mt-5 pt-5 mb-5">
-            <div>
-                <img src="assets/img/footer.png" class="img-fluid" style="width: 100%;" alt="">
-            </div>
-            <div class="container">
-                <div class="row" style="row-gap: 1rem;">
-                    <div class="border-footer"></div>
-                    <div class="col-12 col-lg-4 order-lg-1 order-md-3 order-sm-3 ">
-                        <p>copyright &copy; 2023 Lazcore Inovasi Digital</p>
-                    </div>
-                    <div class="col-12 col-lg-5 d-flex flex-wrap order-md-1" style="column-gap: 2rem;row-gap: .5rem;">
-                        <a target="_blank" href="https://julpik.gumroad.com/">Gumroad</a>
-                        <a target="_blank" href="https://payhip.com/julpik">Payhip</a>
-                        <a target="_blank" href="https://www.behance.net/julpik_">Behance</a>
-                        <a target="_blank" href="https://www.instagram.com/julpik_/">Instagram</a>
-                        
-                    </div>
-                    <div class="col-12 col-lg-3 order-md-2">
-                        <a target="_blank" href="https://julpik.gumroad.com/">Gumroad</a>
-                        <a target="_blank" href="https://payhip.com/julpik">Payhip</a>
-                        <a target="_blank" href="https://www.behance.net/julpik_">Behance</a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-           
-        </footer>
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script>
+    <footer class="mt-5 pb-5 position-relative">
+      <img
+        src="./assets/img/footer.png"
+        alt=""
+        class="position-absolute w-100"
+        id="wave"
+      />
+      <div
+        class="border-top container pt-5"
+        style="z-index: 9999; position: relative"
+      >
+        <div class="row" style="row-gap: 1rem">
+          <div
+            class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-3 order-lg-1"
+          >
+            <p class="m-0" style="color: #3f546c; font-size: 14px">
+              ©Lazcore.id 2023. All rights reserved.
+            </p>
+          </div>
+          <div
+            class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-2 order-lg-2"
+            style="gap: 0.5rem"
+          >
+            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+              >Who We Are</a
+            >
+            <span style="color: #3f546c">/</span>
+            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+              >What We Do</a
+            >
+            <span style="color: #3f546c">/</span>
+            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+              >Our Works</a
+            >
+            <span style="color: #3f546c">/</span>
+            <a href="#" class="" style="color: #3f546c; white-space: nowrap"
+              >Let's Talk</a
+            >
+          </div>
+          <div
+            class="align-items-center col col-12 col-lg-4 d-flex justify-content-center order-1 order-lg-3"
+            style="gap: 2rem"
+          >
+            <a href="#">
+              <img src="./assets/img/ic_footer_maps.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/ic_footer_wa.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/ic_footer_mail.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
     var loader;
 
-function loadNow(opacity) {
-    if (opacity <= 0) {
+    function loadNow(opacity) {
+      if (opacity <= 0) {
         displayContent();
-    } else {
+      } else {
         loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.04);
+        window.setTimeout(function () {
+          loadNow(opacity - 0.04);
         }, 120);
+      }
     }
-}
 
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-}
+    function displayContent() {
+      loader.style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
 
-document.addEventListener("DOMContentLoaded", function() {
-    loader = document.getElementById('loader');
-    loadNow(1);
-});
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loader = document.getElementById("loader");
+      loadNow(1);
+    });
+  </script>
 
-<script>
+  <script>
     var loader;
 
-function loadNow(opacity) {
-    if (opacity <= 0) {
+    function loadNow(opacity) {
+      if (opacity <= 0) {
         displayContent();
-    } else {
+      } else {
         loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.04);
+        window.setTimeout(function () {
+          loadNow(opacity - 0.04);
         }, 120);
+      }
     }
-}
 
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-}
+    function displayContent() {
+      loader.style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
 
-document.addEventListener("DOMContentLoaded", function() {
-    loader = document.getElementById('loader');
-    loadNow(1);
-});
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loader = document.getElementById("loader");
+      loadNow(1);
+    });
+  </script>
+  <script>
+    window.onscroll = function () {
+      const myNav = document.getElementById("bg-nav");
+      // console.log(document.body.getBoundingClientRect().top);
+      if (document.body.getBoundingClientRect().top > -300) {
+        myNav.classList.remove("active");
+        // console.log("1");
+      } else {
+        myNav.classList.add("active");
+        // console.log("2");
+      }
+    };
+  </script>
 </html>
