@@ -56,6 +56,28 @@ body{
     height: 85% !important;
 }
 
+#navbarNavAltMarkup.collapse {
+    transform: translateX(110%);
+    background: #343A40;
+}
+
+#navbarNavAltMarkup {
+    transform: translateX(50%);
+    background: #343A40;
+}
+
+.nav-colored.active {
+    background: #1d76bb;
+}
+
+.nav-colored {
+    width: 100%;
+    height: 4.4rem;
+    position: fixed;
+    z-index: 9999;
+    transition: all ease-in-out .3s;
+}
+
 #our-mission{
     /* height: 252px; */
     top:22%;
@@ -309,6 +331,20 @@ li.splide__slide.splide__slide--clone.p-3.is-active.is-visible {
         position: absolute;
         bottom: 8%;
         right: 8%;
+    }
+
+    #navbarNavAltMarkup.collapse {
+        transform: translateX(0%);
+        background: transparent;
+    }
+    
+    #navbarNavAltMarkup {
+        transform: translateX(0%);
+        background: transparent;
+    }
+
+    .nav-colored {
+        height: 149px;
     }
 }
 

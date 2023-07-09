@@ -12,12 +12,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     />
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-      rel="stylesheet"
-    />
   </head>
   <body class="header-background">
     <div id="loader"></div>
@@ -29,28 +23,28 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           muted
           loop
         ></video>
-
+        <div id="bg-nav" class="nav-colored"></div>
         <nav
-          class="bg-transparent container navbar navbar-dark navbar-expand-md pt-md-4"
+          class="bg-transparent container navbar navbar-dark navbar-expand-md pt-md-4 fixed-top"
           id="navbar"
-          style="z-index: 1"
+          style="z-index: 9999"
         >
           <a class="navbar-brand d-block d-md-none" href="#">
-            <img src="assets/img/ic_logo_head.png" alt="logo" />
+            <img
+              src="assets/img/ic_logo_head.png"
+              alt="logo"
+              style="width: 10rem"
+            />
           </a>
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onclick="document.getElementById('navbarNavAltMarkup').classList.toggle('collapse')"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse justify-content-between navbar-collapse"
+            class="collapse justify-content-between navbar-collapse p-3 mt-2 mt-md-0"
             id="navbarNavAltMarkup"
           >
             <a class="d-md-block d-none navbar-brand" href="#">
@@ -360,80 +354,86 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         >
           We have ben working with some Fortune 500 clients
         </h3>
-        <section
-          class="splide my-5 my-5"
-          aria-label="Splide Basic HTML Example"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide p-3">
-                <div
-                  class="mx-auto shadow p-3"
-                  style="width: 170px; border-radius: 1rem"
-                >
-                  <img
-                    src="./assets/img/logo-mps-7-300x90.png"
-                    alt=""
-                    class="w-100"
-                    style="height: 47px; object-fit: contain"
-                  />
-                </div>
-              </li>
-              <li class="splide__slide p-3">
-                <div
-                  class="mx-auto shadow p-3"
-                  style="width: 170px; border-radius: 1rem"
-                >
-                  <img
-                    src="./assets/img/logo-mps-7-300x90.png"
-                    alt=""
-                    class="w-100"
-                    style="height: 47px; object-fit: contain"
-                  />
-                </div>
-              </li>
-              <li class="splide__slide p-3">
-                <div
-                  class="mx-auto shadow p-3"
-                  style="width: 170px; border-radius: 1rem"
-                >
-                  <img
-                    src="./assets/img/logo-mps-7-300x90.png"
-                    alt=""
-                    class="w-100"
-                    style="height: 47px; object-fit: contain"
-                  />
-                </div>
-              </li>
-              <li class="splide__slide p-3">
-                <div
-                  class="mx-auto shadow p-3"
-                  style="width: 170px; border-radius: 1rem"
-                >
-                  <img
-                    src="./assets/img/logo-mps-7-300x90.png"
-                    alt=""
-                    class="w-100"
-                    style="height: 47px; object-fit: contain"
-                  />
-                </div>
-              </li>
-              <li class="splide__slide p-3">
-                <div
-                  class="mx-auto shadow p-3"
-                  style="width: 170px; border-radius: 1rem"
-                >
-                  <img
-                    src="./assets/img/logo-mps-7-300x90.png"
-                    alt=""
-                    class="w-100"
-                    style="height: 47px; object-fit: contain"
-                  />
-                </div>
-              </li>
-            </ul>
+        <div class="row mt-5">
+          <div class="col-6 col-md-3 mb-4">
+            <div
+              style="width: fit-content; border-radius: 16px"
+              class="mx-auto p-3 shadow"
+            >
+              <img
+                src="./assets/img/logo-mps-7-300x90.png"
+                alt=""
+                class="w-100"
+                style="height: 47px; object-fit: contain"
+              />
+            </div>
           </div>
-        </section>
+          <div class="col-6 col-md-3 mb-4">
+            <div
+              style="width: fit-content; border-radius: 16px"
+              class="mx-auto p-3 shadow"
+            >
+              <img
+                src="./assets/img/logo-mps-7-300x90.png"
+                alt=""
+                class="w-100"
+                style="height: 47px; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div
+              style="width: fit-content; border-radius: 16px"
+              class="mx-auto p-3 shadow"
+            >
+              <img
+                src="./assets/img/logo-mps-7-300x90.png"
+                alt=""
+                class="w-100"
+                style="height: 47px; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div
+              style="width: fit-content; border-radius: 16px"
+              class="mx-auto p-3 shadow"
+            >
+              <img
+                src="./assets/img/logo-mps-7-300x90.png"
+                alt=""
+                class="w-100"
+                style="height: 47px; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div
+              style="width: fit-content; border-radius: 16px"
+              class="mx-auto p-3 shadow"
+            >
+              <img
+                src="./assets/img/logo-mps-7-300x90.png"
+                alt=""
+                class="w-100"
+                style="height: 47px; object-fit: contain"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div
+              style="width: fit-content; border-radius: 16px"
+              class="mx-auto p-3 shadow"
+            >
+              <img
+                src="./assets/img/logo-mps-7-300x90.png"
+                alt=""
+                class="w-100"
+                style="height: 47px; object-fit: contain"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- /.jumbotron -->
@@ -578,15 +578,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script>
-    new Splide(".splide", {
-      type: "loop",
-      perPage: 3,
-      perMove: 1,
-      arrows: false,
-      pagination: false,
-      focus: "center",
-      autoWidth: true,
-    }).mount();
     var loader;
 
     function loadNow(opacity) {
@@ -624,5 +615,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       document.querySelector("#" + target.dataset.target).style.display = "";
       target.classList.add("what-we-do-active");
     }
+  </script>
+  <script>
+    window.onscroll = function () {
+      const myNav = document.getElementById("bg-nav");
+      // console.log(document.body.getBoundingClientRect().top);
+      if (document.body.getBoundingClientRect().top > -300) {
+        myNav.classList.remove("active");
+        // console.log("1");
+      } else {
+        myNav.classList.add("active");
+        // console.log("2");
+      }
+    };
   </script>
 </html>
