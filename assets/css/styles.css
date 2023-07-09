@@ -67,7 +67,7 @@ body{
 }
 
 .nav-colored.active {
-    background: #1d76bb;
+    background: #076DDB;
 }
 
 .nav-colored {
@@ -284,16 +284,9 @@ body{
     height: 60rem;
 }
 
-li.splide__slide {
-    transition: all ease-in-out .3s;
-}
-
-li.splide__slide.p-3.is-active.is-visible {
-    transform: translateY(-1.5rem);
-}
-
-li.splide__slide.splide__slide--clone.p-3.is-active.is-visible {
-    transform: translateY(0rem);
+footer #wave {
+    top: -6rem;
+    z-index: 9;
 }
 
 @media (min-width:992px) {
@@ -314,6 +307,10 @@ li.splide__slide.splide__slide--clone.p-3.is-active.is-visible {
         position: absolute;
         bottom: 8%;
         right: 8%;
+    }
+
+    footer #wave {
+        top: -13rem !important;
     }
 }
 @media (min-width:768px)   { 
@@ -345,6 +342,10 @@ li.splide__slide.splide__slide--clone.p-3.is-active.is-visible {
 
     .nav-colored {
         height: 149px;
+    }
+
+    footer #wave {
+        top: -8rem;
     }
 }
 
