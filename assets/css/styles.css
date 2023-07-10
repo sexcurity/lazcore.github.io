@@ -5,10 +5,12 @@
 
 body{
     font-family: 'Poppins', sans-serif !important;
+    /* filter:blur(40px);
+    -webkit-filter:blur(40px); */
 }
 
 .what-we-do-active {
-    background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%)
+    background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%);
 }
 
 .what-we-do-text-gradient {
@@ -44,13 +46,18 @@ body{
     margin-right: auto;
 }
 
-#loader {
+.loader {
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: 99999;
+    z-index: 2;
     overflow: visible;
-    background: #fff url('../img/preloader.gif') no-repeat center center ;
+    background: #fff url('../img/preload.gif') no-repeat center center ;
+}
+.blurred{
+    /* z-index: 99998; */
+    filter:blur(900px) !important;
+    -webkit-filter:blur(900px) !important;
 }
 #header-whoweare .img-header{
     height: 85% !important;
@@ -102,7 +109,7 @@ body{
 #contact {
     position: relative;
     top: -95px;
-    z-index: 999;
+    z-index: 1;
 }
 #socmed-management .frame-card {
     height: 552px;
@@ -179,7 +186,7 @@ body{
     height: 100vh;
     /* margin-top: -91px; */
     padding-top: 31px;
-    z-index:9;
+    z-index:1;
 }
 
 #hero img {
@@ -196,6 +203,10 @@ body{
 #hero p {
     font-size: 80px;
 }
+.backsection{
+    filter:blur(40px);
+    -webkit-filter:blur(40px);
+}
 
 .header-background {
     background-image: url('../img/bannerr.png');
@@ -206,6 +217,9 @@ body{
     background-size:cover;
     background-position:center;
     height: 1080px;
+    z-index:-1;
+    /* filter:blur(40px);
+    -webkit-filter:blur(40px); */
 }
 #header-whoweare h1{
     color: #2D1D61;
@@ -319,7 +333,8 @@ footer #wave {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 45rem;
+        height: 60rem;
+        margin-top: 15%;
     }
 
     #hero .img-wa {
