@@ -7,6 +7,14 @@ body{
     font-family: 'Poppins', sans-serif !important;
 }
 
+#loader-blur {
+    filter: blur(8px);
+    transition: all ease-in-out .5s;
+}
+.blur-out {
+    filter: blur(0px) !important;
+}
+
 .what-we-do-active {
     background: linear-gradient(139.37deg, #1D76BB -8.64%, #282560 107.27%)
 }
