@@ -8,11 +8,10 @@ body{
 }
 
 #loader-blur {
-    filter: blur(8px);
     transition: all ease-in-out .5s;
 }
 .blur-out {
-    filter: blur(0px) !important;
+    /* filter: blur(0px) !important; */
 }
 
 .what-we-do-active {
