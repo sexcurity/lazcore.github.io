@@ -327,7 +327,7 @@
         </div>
       </div>
 
-      <div id="our-works" class="align-items-center d-flex mb-4">
+      <div id="our-works" class="align-items-center d-flex mb-4 position-relative">
         <div class="container">
           <div class="row">
             <div
@@ -615,7 +615,7 @@
         loader.style.opacity = opacity;
         window.setTimeout(function () {
           loadNow(opacity - 0.018);
-        }, 100);
+        }, 150);
       }
     }
 
@@ -662,7 +662,7 @@
     const blurWrapper = document.getElementById("loader-blur");
 
     if (blurWrapper) {
-      setTimeout(() => blurWrapper.style.filter = 'unset', 1500);
+      setTimeout(() => blurWrapper.style.filter = 'unset', 5500);
     }
   </script>
 </html>
